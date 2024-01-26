@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Marcellus+SC&display=swap');
+   *{padding: 0;margin: 0;box-sizing: border-box;}
+    body {
+        background-color: #1F2F2F;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
+    main {overflow: hidden;}
+    h1 {font-size: 300%;
+        font-family: 'Marcellus SC', serif;
+    }
+    section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .scroll-container {
+        background-color: darksalmon;
+        width: 500%;
+        display: flex;
+        border-top: 5px solid red;
+        border-bottom: 5px solid red;
+    }
+    .scroll-panel {
+        width: 100vw;
+    }
+    .scroll-panel:nth-of-type(even) {
+        background-color: bisque;
+    }
+
+    .quiz-container{
+        background: #E1B16F;
+        border-radius: 19px;
+        width: 50%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        line-height: 40px;
+    }
+
+    .quiz-container h1{
+        padding: 20px 
+    }
+    .quiz-container p{
+    font-size: 20px;
+    font-weight: 600;
+    }
+
+    #quiz1, #quiz2, #quiz3{
+    width: 50%;
+    align-self: center;
+    }
+
+    #quiz1 button, #quiz2 button, #quiz3 button{
+       font-family: 'Darker Grotesque', sans-serif;
+       margin: 6px;
+    background: #F9DCB4;
+    font-size: 20px;
+        font-weight: 600;
+        width: 60%;
+        height: 40px;
+        align-self: center;
+    }
+    
+    #quiz1 button:hover, #quiz2 button:hover, #quiz3 button:hover{
+        background-color: #af563d;
+      }
+      
+      .result {
+        text-align: center;
+        margin-top: 40px;
+        font-weight: bold;
+        line-height: 30px;
+      }
+      
+      .hide{
+        display: none;
+      }
+
+      .incorrect{
+        color:red;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .correct{
+        color:green;
+        font-size: 20px;
+        font-weight: 600;
+      }
