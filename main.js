@@ -1,18 +1,25 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray(".scroll-item");
+function setupScrollTrigger(scrollContainer) {
+  let sections = gsap.utils.toArray(".scroll-item", scrollContainer);
 
-    gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".scroll-container",
-          pin: true,
-          scrub: 1,
-          snap: 1 / (sections.length - 1),
-          end: () => "+=" + document.querySelector(".scroll-container").offsetWidth
-        }
-    });
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: scrollContainer,
+      pin: true,
+      scrub: 1,
+      snap: 1 / (sections.length - 1),
+      end: () => "+=" + scrollContainer.offsetWidth
+    }
+  });
+}
+
+const containers = document.querySelectorAll('.scroll-container');
+containers.forEach(container => setupScrollTrigger(container));
+
+// Your quiz code here
 
     //Ancient Civilisations Quiz
     const quizzes = {
@@ -139,3 +146,56 @@ let sections = gsap.utils.toArray(".scroll-item");
       quiz2.displayQuestion();
       quiz3.displayQuestion();
       
+
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide('#splide1', {
+          type: 'loop',
+          perPage: 1,
+          focus: 'center',
+          flickMaxPages: 2,
+          updateOnMove: true,
+          pagination: false,
+          padding: '10%',
+          throttle: 300,
+          breakpoints: {
+            1440: {
+              perPage: 1,
+              padding: '30%'
+            }
+          }
+        }).mount();
+      
+        new Splide('#splide2', {
+          type: 'loop',
+          perPage: 1,
+          focus: 'center',
+          flickMaxPages: 2,
+          updateOnMove: true,
+          pagination: false,
+          padding: '10%',
+          throttle: 300,
+          breakpoints: {
+            1440: {
+              perPage: 1,
+              padding: '30%'
+            }
+          }
+        }).mount();
+      
+        new Splide('#splide3', {
+          type: 'loop',
+          perPage: 1,
+          focus: 'center',
+          flickMaxPages: 2,
+          updateOnMove: true,
+          pagination: false,
+          padding: '10%',
+          throttle: 300,
+          breakpoints: {
+            1440: {
+              perPage: 1,
+              padding: '30%'
+            }
+          }
+        }).mount();
+      });

@@ -9,7 +9,10 @@
 	<meta name="description" content="Horizontal Scroll" />
 	<meta name="keywords" content="xirosoft, html" />
   <link rel="stylesheet" href="style.css"  type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 	<title>Historical Mysteries: Unravelling the Past</title>
+
 
 </head>
 
@@ -18,72 +21,108 @@
 
 	<section><h1>Historical Mysteries: Unravelling the Past</h1></section>
   <div>
-	<section class="scroll-container Ancient-Civilizations">
-		<section class="scroll-item"><h1>Building of the Great Pyramid of Giza (c. 2580–2560 BCE)</h1></section>
-		<section class="scroll-item"><h1>Disappearance of the Indus Valley Civilization (c. 1900 BCE)</h1></section>
-		<section class="scroll-item"><h1>Construction of Stonehenge (c. 3000–2000 BCE)</h1></section>
-		<section class="scroll-item"><h1>Collapse of the Mayan Civilization (c. 800–1000 CE)</h1></section>
+	<section class="scroll-container Ancient">
+		<section class="scroll-item"><img src="media\BuildingoftheGreatPyramidofGiza.png" alt="BuildingoftheGreatPyramidofGiza"><p class="timeline">2580–2560 BCE</p><h1>Building of the Great Pyramid of Giza</h1></section>
+		<section class="scroll-item"><img src="media/DisappearanceoftheIndusValleyCivilization.jpe" alt="IndusValleyCivilization"><p class="timeline">1900 BCE</p><h1>Disappearance of the Indus Valley Civilization</h1></section>
+		<section class="scroll-item"><img src="media\ConstructionofStonehenge.png" alt="Stonehenge"> <p class="timeline">3000–2000 BCE</p><h1>Construction of Stonehenge</h1></section>
+		<section class="scroll-item"><img src="media/CollapseofMayanCivilization.jpg" alt="CollapseofMayanCivilization"><p class="timeline">800–1000 CE</p><h1>Collapse of the Mayan Civilization</h1></section>
 	</section>
-  <section><h1>Resources</h1></section>
+  <section class="resources"><h1>Resources</h1></section>
 
-	<section><h1>Photo Gallery</h1></section>
+	<section class="photo-gallery">
+		<h1>Photo Gallery</h1>
+		<div id="splide1" class="splide">
+			<div class="splide__track">
+			  <ul class="splide__list">
+				<li class="splide__slide"><img src="media\BuildingoftheGreatPyramidofGiza.png" alt="BuildingoftheGreatPyramidofGiza"></li>
+				<li class="splide__slide"><img src="media/DisappearanceoftheIndusValleyCivilization.jpe" alt="IndusValleyCivilization"></li>
+				<li class="splide__slide"><img src="media\ConstructionofStonehenge.png" alt="Stonehenge"></li>
+				<li class="splide__slide"><img src="media/CollapseofMayanCivilization.jpg" alt="CollapseofMayanCivilization"></li>
+			  </ul>
+			</div>
+		  </div>
+	</section>
 
-	<section><h1>Video Gallery</h1></section>
+	<section class="video-gallery"><h1>Video Gallery</h1></section>
 
-	<section>
+	<section class="quiz">
     <div class="quiz-container">
     <h1>Quiz</h1>
     <div id="quiz1"></div>
   </div>
   </section>
 
-	<section><h1>Contact</h1></section>
+	<section class="contact"><h1>Contact</h1></section>
 </div>
 
 <div style="display: hidden;">
-	<section class="scroll-container Ancient-Civilizations">
-		<section class="scroll-item"><h1>Building of the Great Pyramid of Giza (c. 2580–2560 BCE)</h1></section>
-		<section class="scroll-item"><h1>Disappearance of the Indus Valley Civilization (c. 1900 BCE)</h1></section>
-		<section class="scroll-item"><h1>Construction of Stonehenge (c. 3000–2000 BCE)</h1></section>
-		<section class="scroll-item"><h1>Collapse of the Mayan Civilization (c. 800–1000 CE)</h1></section>
+	<section class="scroll-container Mysteries">
+		<section class="scroll-item"><img src="media/TheRoanokeColonyDisappearance.png" alt="TheRoanokeColonyDisappearance"><p class="timeline">1590</p><h1>The Roanoke Colony Disappearance</h1></section>
+		<section class="scroll-item"><img src="media/TheLostColonyofGreenland.png" alt="TheLostColonyofGreenland"><p class="timeline">1400s</p><h1>The Lost Colony of Greenland</h1></section>
+		<section class="scroll-item"><img src="media/The_Voynich_Manuscript_Discovery.png" alt="The_Voynich_Manuscript_Discovery"><p class="timeline">1400–1500s</p><h1>The Voynich Manuscript Discovery</h1></section>
+		<section class="scroll-item"><img src="media/TheTamamShudCase.png" alt="TheTamamShudCase"><p class="timeline">1948</p><h1>The Tamam Shud Case</h1></section>
 	</section>
-  <section><h1>Resources</h1></section>
+  <section class="resources"><h1>Resources</h1></section>
 
-	<section><h1>Photo Gallery</h1></section>
+	<section class="photo-gallery">
+		<h1>Photo Gallery</h1>
+		<div id="splide2" class="splide">
+			<div class="splide__track">
+			  <ul class="splide__list">
+				<li class="splide__slide"><img src="media/TheRoanokeColonyDisappearance.png" alt="TheRoanokeColonyDisappearance"></li>
+				<li class="splide__slide"><img src="media/TheLostColonyofGreenland.png" alt="TheLostColonyofGreenland"></li>
+				<li class="splide__slide"><img src="media/The_Voynich_Manuscript_Discovery.png" alt="The_Voynich_Manuscript_Discovery"></li>
+				<li class="splide__slide"><img src="media/TheTamamShudCase.png" alt="TheTamamShudCase"></li>
+			  </ul>
+			</div>
+		  </div>
+	</section>
 
-	<section><h1>Video Gallery</h1></section>
+	<section class="video-gallery"><h1>Video Gallery</h1></section>
 
-	<section>
+	<section class="quiz">
     <div class="quiz-container">
       <h1>Quiz</h1>
     <div id="quiz2"></div>
   </div>
   </section>
 
-	<section><h1>Contact</h1></section>
+	<section class="contact"><h1>Contact</h1></section>
 </div>
 
 <div style="display: hidden;">
-	<section class="scroll-container Ancient-Civilizations">
-		<section class="scroll-item"><h1>Building of the Great Pyramid of Giza (c. 2580–2560 BCE)</h1></section>
-		<section class="scroll-item"><h1>Disappearance of the Indus Valley Civilization (c. 1900 BCE)</h1></section>
-		<section class="scroll-item"><h1>Construction of Stonehenge (c. 3000–2000 BCE)</h1></section>
-		<section class="scroll-item"><h1>Collapse of the Mayan Civilization (c. 800–1000 CE)</h1></section>
+	<section class="scroll-container Riddles">
+		<section class="scroll-item"><img src="media/The_Antikythera_Mechanism.png" alt="The_Antikythera_Mechanism"><p class="timeline">100BCE</p><h1>The Antikythera Mechanism</h1></section>
+		<section class="scroll-item"><img src="media/Shroud_of_Turin.png" alt="Shroud_of_Turin"><p class="timeline">14th century</p><h1>The Shroud of Turin's Origins</h1></section>
+		<section class="scroll-item"><img src="media/The_Dancing_Plague_1.png" alt="The_Dancing_Plague"><p class="timeline">1518</p><h1>The Dancing Plague of 1518</h1></section>
+		<section class="scroll-item"><img src="media/The_Tunguska_Event.png" alt="The_Tunguska_Event"><p class="timeline">1908</p><h1>The Tunguska Event</h1></section>
 	</section>
-  <section><h1>Resources</h1></section>
+  <section class="resources"><h1>Resources</h1></section>
 
-	<section><h1>Photo Gallery</h1></section>
+  <section class="photo-gallery">
+	<h1>Photo Gallery</h1>
+	<div id="splide3" class="splide">
+		<div class="splide__track">
+		  <ul class="splide__list">
+			<li class="splide__slide"><img src="media/The_Antikythera_Mechanism.png" alt="The_Antikythera_Mechanism"></li>
+			<li class="splide__slide"><img src="media/Shroud_of_Turin.png" alt="Shroud_of_Turin"></li>
+			<li class="splide__slide"><img src="media/The_Dancing_Plague_1.png" alt="The_Dancing_Plague"></li>
+			<li class="splide__slide"><img src="media/The_Tunguska_Event.png" alt="The_Tunguska_Event"></li>
+		  </ul>
+		</div>
+	  </div>
+</section>
 
-	<section><h1>Video Gallery</h1></section>
+	<section class="video-gallery"><h1>Video Gallery</h1></section>
 
-	<section>
+	<section class="quiz">
     <div class="quiz-container">
       <h1>Quiz</h1>
     <div id="quiz3"></div>
     </div>
   </section>
 
-	<section><h1>Contact</h1></section>
+	<section class="contact"><h1>Contact</h1></section>
 </div>
 
 	<footer></footer>

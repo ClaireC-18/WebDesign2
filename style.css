@@ -18,17 +18,12 @@
     }
 
     .scroll-container {
-        background-color: darksalmon;
         width: 500%;
         display: flex;
-        border-top: 5px solid red;
-        border-bottom: 5px solid red;
     }
+
     .scroll-panel {
         width: 100vw;
-    }
-    .scroll-panel:nth-of-type(even) {
-        background-color: bisque;
     }
 
     .quiz-container{
@@ -92,4 +87,74 @@
         color:green;
         font-size: 20px;
         font-weight: 600;
+      }
+
+      .scroll-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .scroll-item img {
+        width: 100%; /* Ensure the image takes the full width of its container */
+        max-width: 650px; /* Adjust the maximum width of the image as needed */
+        margin-bottom: 10px; /* Add some space between the image and the following elements */
+    }
+
+    .timeline {
+        margin-bottom: 5px; /* Add some space between the timeline and the heading */
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .splide {
+        padding: 20px 0;
+      }
+      
+      /* Generic Slide*/
+      .splide__slide {
+        img {
+            width: 70%;
+            max-width: 100%; /* Ensure the image doesn't exceed its original size */
+            border-radius: 8px;
+            transition: transform 400ms;
+            transform: scale(0.9);
+            transform-origin: center center;
+        }
+      }
+
+      /*Active Slide*/
+      .splide__slide.is-active {
+        img {
+          transform: scale(1);
+        }
+      }
+      
+      /*Arrow Tweaks for Accessibility*/
+      .splide .splide__arrow {
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        transform: none;
+        border-radius: unset;
+        width: 50px;
+        opacity: .9;
+        svg {
+          filter: invert(1);
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .splide__arrow.splide__arrow--prev {
+        left: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+      }
+      .splide__arrow.splide__arrow--next {
+        right: 0;
+        background: linear-gradient(270deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+      }
+
+      .photo-gallery{
+        flex-direction: column;
       }
