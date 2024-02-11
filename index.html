@@ -6,14 +6,19 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-	<meta name="description" content="Horizontal Scroll" />
+	<meta name="description" content="Historical Mysteries: Unravelling the Past" />
 	<meta name="keywords" content="xirosoft, html" />
-  <link rel="stylesheet" href="style.css"  type="text/css" />
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/light.css">
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/shoelace.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/@shoelace-style/shoelace@2.0.0-beta.104/dist/themes/light/shoelace.css" />
+	<link rel="stylesheet" href="https://unpkg.com/@shoelace-style/shoelace@2.0.0-beta.41/dist/themes/light-theme.css" />
+<script src="https://unpkg.com/@shoelace-style/shoelace@2.0.0-beta.41/dist/shoelace.js"></script>
+
+
 	<title>Historical Mysteries: Unravelling the Past</title>
-
-
 </head>
 
 <body>
@@ -22,12 +27,268 @@
 	<section><h1>Historical Mysteries: Unravelling the Past</h1></section>
   <div>
 	<section class="scroll-container Ancient">
-		<section class="scroll-item"><img src="media\BuildingoftheGreatPyramidofGiza.png" alt="BuildingoftheGreatPyramidofGiza"><p class="timeline">2580–2560 BCE</p><h1>Building of the Great Pyramid of Giza</h1></section>
-		<section class="scroll-item"><img src="media/DisappearanceoftheIndusValleyCivilization.jpe" alt="IndusValleyCivilization"><p class="timeline">1900 BCE</p><h1>Disappearance of the Indus Valley Civilization</h1></section>
-		<section class="scroll-item"><img src="media\ConstructionofStonehenge.png" alt="Stonehenge"> <p class="timeline">3000–2000 BCE</p><h1>Construction of Stonehenge</h1></section>
-		<section class="scroll-item"><img src="media/CollapseofMayanCivilization.jpg" alt="CollapseofMayanCivilization"><p class="timeline">800–1000 CE</p><h1>Collapse of the Mayan Civilization</h1></section>
+		<section class="scroll-item">
+			<img src="media\BuildingoftheGreatPyramidofGiza.png" alt="BuildingoftheGreatPyramidofGiza">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+			<p class="timeline">2580–2560 BCE</p>
+			<h2>Building of the Great Pyramid of Giza</h2>
+		</div>
+		</section>
+		<section class="scroll-item">
+			<img src="media/DisappearanceoftheIndusValleyCivilization.jpe" alt="IndusValleyCivilization">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+			<p class="timeline">1900 BCE</p>
+			<h2>Disappearance of the Indus Valley Civilization</h2>
+		</div>
+		</section>
+		<section class="scroll-item">
+			<img src="media\ConstructionofStonehenge.png" alt="Stonehenge"> 
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+			<p class="timeline">3000–2000 BCE</p>
+			<h2>Construction of Stonehenge</h2>
+		</div>
+		</section>
+		<section class="scroll-item">
+			<img src="media/CollapseofMayanCivilization.jpg" alt="CollapseofMayanCivilization">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+			<p class="timeline">800–1000 CE</p>
+			<h2>Collapse of the Mayan Civilization</h2>
+		</div>
+		</section>
 	</section>
-  <section class="resources"><h1>Resources</h1></section>
+	<section class="resources">
+		<h1>Resources</h1>
+		<sl-tab-group activation="manual">
+		  <sl-tab slot="nav" panel="pyramids">Building of the Great Pyramid of Giza</sl-tab>
+		  <sl-tab slot="nav" panel="indusvalley">Disappearance of the Indus Valley Civilization</sl-tab>
+		  <sl-tab slot="nav" panel="stonehenge">Construction of Stonehenge</sl-tab>
+		  <sl-tab slot="nav" panel="mayans">Collapse of the Mayan Civilization</sl-tab>
+		
+		  <sl-tab-panel name="pyramids"><table>
+		  <tr>
+			<th>Pyramids of Giza</th>
+			<th>The Pyramids at Giza were built to endure an eternity—but how?</th>
+       <th>The Egyptian Pyramid</th>
+		  </tr>
+		  <tr>
+			<td>
+      <div class="resource-container">  
+      <div class="circle"><img src="https://cdn.britannica.com/42/94542-120-5736FDEF/Pyramids-Cairo-Giza-plateau.jpg" alt="Pyramids-Cairo-Giza"/></div>
+      <a href="https://www.britannica.com/topic/Pyramids-of-Giza" target="_blank"><img src="https://cdn.britannica.com/mendel-resources/3-111/images/EBLogo.jpg?v=3.111.26" alt="britannica" width="250"/></a>
+      </div>
+      </td>
+			<td>
+			<div class="resource-container2">   
+      <div class="circle"><img src="https://i.natgeofe.com/n/535f3cba-f8bb-4df2-b0c5-aaca16e9ff31/giza-plateau-pyramids.jpg" alt="Pyramids-Cairo-Giza"/></div>
+      <a href="https://www.nationalgeographic.com/history/article/giza-pyramids#:~:text=Who%20built%20the%20Pyramids%20of,smooth%20casing%20stones%20long%20gone." target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/national-geographic.svg" alt="national-geographic-logo" width="250"/></a>
+      </div>
+			</td>
+      <td>
+       <div class="resource-container3">   
+      <div class="circle"><img src="https://th-thumbnailer.cdn-si-edu.com/o5fjrPRPOEAY9bcfDfigCX7qVo4=/800x600/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/94/3b/943b17ca-2115-42bb-85b0-28b9333361d6/oct2015_d06_pyramids.jpg" alt="Pyramids-Cairo-Giza-plateau"/></div>
+      <a href="https://www.si.edu/spotlight/ancient-egypt/pyramid" target="_blank"><img src="https://museum.msu.edu/wp-content/uploads/2023/08/Sponsor-Smithsonian.jpg" alt="Smithsonian" width="250"/></a>
+      </div>
+      </td>
+		  </tr>
+		  <tr>
+			<th>Egyptian Pyramids</th>
+			<th>16 Fun Facts About The GREAT PYRAMID</th>
+      <th>One of the Seven Wonders of the Ancient World</th>
+		  </tr>
+		  <tr>
+	<td>
+      <div class="resource-container4">  
+      <div class="circle"><img src="https://assets.editorial.aetnd.com/uploads/2009/10/egyptian-pyramids-gettyimages-51739588.jpg" alt="Pyramids-Cairo-Giza"/></div>
+      <a href="https://www.history.com/topics/ancient-egypt/the-egyptian-pyramids" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/history-channel-1.svg" alt="history-channel" width="250"/></a>
+      </div>
+      </td>
+			<td>
+			<div class="resource-container5">   
+      <div class="circle"><img src="https://cdn.kastatic.org/ka-perseus-images/dc4e721228c6404058249e6c453628885694fd82.jpg" alt="Pyramids-Cairo-Giza"/></div>
+      <a href="https://www.khanacademy.org/humanities/ap-art-history/ancient-mediterranean-ap/ancient-egypt-ap/a/old-kingdom-the-great-pyramids-of-giza" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUcQMsC_ZDnTaGNFo7qWR7s4zCBoI19q6Vhq1WLVh5xrB5sA77tCRdycXUcDXIrgdn3bk&usqp=CAU" alt="khanacademy" width="250"/></a>
+      </div>
+			</td>
+      <td>
+       <div class="resource-container6">   
+      <div class="circle"><img src="https://4.bp.blogspot.com/-gKrFKibCB9c/XFSlXahi3xI/AAAAAAAAOJ4/0b3LY4QcytgxHFXxqT7QgAhed0eT-EJMACLcBGAs/s1600/Egyptian-builders.jpg" alt="Pyramids-Cairo-Giza-"/></div>
+      <a href="https://www.egyptabout.com/2019/02/facts-16-fun-facts-about-great-pyramid.html" target="_blank"><img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/c750st4krhgnl8k27jd9q2r3o1.jpg" alt="ScottPeters" width="250"/></a>
+      </div>
+      </td>
+		  </tr>
+		</table>
+		</sl-tab-panel>
+		<sl-tab-panel name="indusvalley">
+    <table>
+		  <tr>
+			<th>The end of the Indus civilization</th>
+			<th>These 5 cities vanished without a trace. We're finally learning their stories.</th>
+       <th>The 4,500-Year-Old City of Mohenjo Daro Is Crumbling, And No One Is Stopping It</th>
+		  </tr>
+		  <tr>
+			<td>
+      <div class="resource-container">  
+      <div class="circle"><img src="https://cdn.britannica.com/22/196822-050-0E40EBC2/Ruins-city-Harappa-Pakistan-Punjab.jpg" alt="Disappearance of the indus valley civilization"/></div>
+      <a href="https://www.britannica.com/place/India/The-end-of-the-Indus-civilization" target="_blank"><img src="https://cdn.britannica.com/mendel-resources/3-111/images/EBLogo.jpg?v=3.111.26" alt="britannica" width="250"/></a>
+      </div>
+      </td>
+			<td>
+			<div class="resource-container2">   
+      <div class="circle"><img src="https://static.nationalgeographic.co.uk/files/styles/image_3200/public/gettyimages-947583910.webp?w=1600&h=900" alt="Disappearance of the indus valley civilization"/></div>
+      <a href="https://www.nationalgeographic.co.uk/history-and-civilisation/2022/12/these-5-cities-vanished-without-a-trace-were-finally-learning-their-stories" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/national-geographic.svg" alt="national-geographic-logo" width="250"/></a>
+      </div>
+			</td>
+      <td>
+       <div class="resource-container3">   
+      <div class="circle"><img src="https://th-thumbnailer.cdn-si-edu.com/o5fjrPRPOEAY9bcfDfigCX7qVo4=/800x600/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/94/3b/943b17ca-2115-42bb-85b0-28b9333361d6/oct2015_d06_pyramids.jpg" alt="Disappearance of the indus valley civilization"/></div>
+      <a href="https://www.smithsonianmag.com/smart-news/the-4500-year-old-city-of-mohenjo-daro-is-crumbling-and-no-one-is-stopping-it-2165022/" target="_blank"><img src="https://museum.msu.edu/wp-content/uploads/2023/08/Sponsor-Smithsonian.jpg" alt="Smithsonian" width="250"/></a>
+      </div>
+      </td>
+		  </tr>
+		  <tr>
+			<th>Here’s Why These Six Ancient Civilizations Mysteriously Collapsed</th>
+			<th>Indus River Valley civilizations</th>
+      <th>The Mystery Of The Collapse Of The Indus Valley Civilization Has Now Been Solved</th>
+		  </tr>
+		  <tr>
+	<td>
+      <div class="resource-container4">  
+      <div class="circle"><img src="https://assets.editorial.aetnd.com/uploads/2010/05/mayan-civilization-gettyimages-113637200.jpg?width=1080&height=608&crop=1080%3A608%2Csmart&quality=75&auto=webp" alt="Disappearance of the indus valley civilization"/></div>
+      <a href="https://www.history.com/news/6-civilizations-that-mysteriously-collapsed" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/history-channel-1.svg" alt="history-channel" width="250"/></a>
+      </div>
+      </td>
+			<td>
+			<div class="resource-container5">   
+      <div class="circle"><img src="https://images.squarespace-cdn.com/content/v1/6047d405b02148755fb6e601/2449977f-b0fd-40cc-bf69-97c9e9bb4d92/collage.png?format=2500w" alt="Disappearance of the indus valley civilization"/></div>
+      <a href="https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-india/a/the-indus-river-valley-civilizations" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUcQMsC_ZDnTaGNFo7qWR7s4zCBoI19q6Vhq1WLVh5xrB5sA77tCRdycXUcDXIrgdn3bk&usqp=CAU" alt="khanacademy" width="250"/></a>
+      </div>
+			</td>
+      <td>
+       <div class="resource-container6">   
+      <div class="circle"><img src="https://images.squarespace-cdn.com/content/v1/6047d405b02148755fb6e601/192a3526-d5b9-4143-a72c-f8765759305b/jed-owen-uqSzeZMbd_0-unsplash.jpg?format=2500w" alt="Disappearance of the indus valley civilization"/></div>
+      <a href="https://www.thearchaeologist.org/blog/the-mystery-of-the-collapse-of-the-indus-valley-civilization-has-now-been-solved" target="_blank"><img src="https://images.squarespace-cdn.com/content/v1/6047d405b02148755fb6e601/1615389509962-8VBC9K1UG7Z617KBMPYI/Profile%2BLogo.jpg" alt="thearchaeologist" width="250"/></a>
+      </div>
+      </td>
+		  </tr>
+		</table>
+		</sl-tab-panel>
+		 		  <sl-tab-panel name="stonehenge">
+      <table>
+		  <tr>
+			<th>Stonehenge</th>
+			<th>Stonehenge</th>
+       <th>New Light on Stonehenge</th>
+		  </tr>
+		  <tr>
+			<td>
+      <div class="resource-container">  
+      <div class="circle"><img src="https://cdn.britannica.com/17/94717-050-D5D80799/Sunlight-portion-stone-circle-Stonehenge-Eng-Wiltshire.jpg?w=300" alt="Stonehenge"/></div>
+      <a href="https://www.britannica.com/topic/Stonehenge" target="_blank"><img src="https://cdn.britannica.com/mendel-resources/3-111/images/EBLogo.jpg?v=3.111.26" alt="britannica" width="250"/></a>
+      </div>
+      </td>
+			<td>
+			<div class="resource-container2">   
+      <div class="circle"><img src="https://i.natgeofe.com/n/ba4849d7-17a4-4512-a829-4a795178ef38/24772_3x4.jpg" alt="Stonehenge"/></div>
+      <a href="https://www.nationalgeographic.com/history/article/stonehenge-1#:~:text=These%20huge%20sandstone%20blocks%2C%20each,million%20hours%20to%20construct%20Stonehenge" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/national-geographic.svg" alt="national-geographic-logo" width="250"/></a>
+      </div>
+			</td>
+      <td>
+       <div class="resource-container3">   
+      <div class="circle"><img src="https://th-thumbnailer.cdn-si-edu.com/mxpJNvMq2rFbrBLyLAmDzwxrNqs=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/stonehenge_631.jpg" alt="Stonehenge"/></div>
+      <a href="https://www.smithsonianmag.com/history/new-light-on-stonehenge-11706891/#:~:text=We%20now%20know%20that%20Stonehenge,found%20throughout%20the%20British%20Isles" target="_blank"><img src="https://museum.msu.edu/wp-content/uploads/2023/08/Sponsor-Smithsonian.jpg" alt="Smithsonian" width="250"/></a>
+      </div>
+      </td>
+		  </tr>
+		  <tr>
+			<th>Solving the Riddle of Stonehenge’s Construction</th>
+			<th>The Neolithic Revolution</th>
+      <th>How was Stonehenge built?</th>
+		  </tr>
+		  <tr>
+	<td>
+      <div class="resource-container4">  
+      <div class="circle"><img src="https://assets.editorial.aetnd.com/uploads/2010/06/d8785430-77ae-45e9-9d4c-daa3b42f79b2.jpg?width=1920&height=960&crop=1920%3A960%2Csmart&quality=75&auto=webp" alt="Stonehenge"/></div>
+      <a href="https://www.history.com/news/solving-the-riddle-of-stonehenges-construction" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/history-channel-1.svg" alt="history-channel" width="250"/></a>
+      </div>
+      </td>
+			<td>
+			<div class="resource-container5">   
+      <div class="circle"><img src="https://cdn.kastatic.org/ka-perseus-images/c36576c38a7393dc95d8b9e280ca1ff16d446d20.jpg" alt="Stonehenge"/></div>
+      <a href="https://www.khanacademy.org/humanities/ap-art-history/global-prehistory-ap/paleolithic-mesolithic-neolithic-apah/a/the-neolithic-revolution" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUcQMsC_ZDnTaGNFo7qWR7s4zCBoI19q6Vhq1WLVh5xrB5sA77tCRdycXUcDXIrgdn3bk&usqp=CAU" alt="khanacademy" width="250"/></a>
+      </div>
+			</td>
+      <td>
+       <div class="resource-container6">   
+      <div class="circle"><img src="https://www.britishmuseum.org/sites/default/files/styles/uncropped_large/public/2022-06/Stonehenge-joints-1024x685.jpg?itok=Tnlgbb21" alt="Stonehenge"/></div>
+      <a href="https://www.britishmuseum.org/blog/how-was-stonehenge-built" target="_blank"><img src="https://images1.the-dots.com/1680522/bn7fw-et-400x400.jpeg?p=squareContained" alt="britishmuseum" width="250"/></a>
+      </div>
+      </td>
+		  </tr>
+		</table>
+</sl-tab-panel> 
+		  <sl-tab-panel name="mayans">
+      <table>
+		  <tr>
+			<th>The collapse of Classic Maya civilization</th>
+			<th>Changing Climate and the Maya</th>
+       <th>Why Did the Mayan Civilization Collapse? A New Study Points to Deforestation and Climate Change</th>
+		  </tr>
+		  <tr>
+			<td>
+      <div class="resource-container">  
+      <div class="circle"><img src="https://cdn.britannica.com/22/178922-050-A60899B0/ruins-Monte-Alban-Oaxaca-Mexico.jpg?w=300" alt="The collapse of Classic Maya civilization"/></div>
+      <a href="https://www.britannica.com/topic/pre-Columbian-civilizations/The-collapse-of-Classic-Maya-civilization" target="_blank"><img src="https://cdn.britannica.com/mendel-resources/3-111/images/EBLogo.jpg?v=3.111.26" alt="britannica" width="250"/></a>
+      </div>
+      </td>
+			<td>
+			<div class="resource-container2">   
+      <div class="circle"><img src="https://i.natgeofe.com/n/54efa2aa-6b84-41f2-a067-292c94ed9aa2/maya7_4x3.jpg" alt="The collapse of Classic Maya civilization"/></div>
+      <a href="https://education.nationalgeographic.org/resource/changing-climate-and-maya/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/national-geographic.svg" alt="national-geographic-logo" width="250"/></a>
+      </div>
+			</td>
+      <td>
+       <div class="resource-container3">   
+      <div class="circle"><img src="http://blogs.smithsonianmag.com/science/files/2012/08/Tikal.jpeg" alt="The collapse of Classic Maya civilization"/></div>
+      <a href="https://www.smithsonianmag.com/science-nature/why-did-the-mayan-civilization-collapse-a-new-study-points-to-deforestation-and-climate-change-30863026/" target="_blank"><img src="https://museum.msu.edu/wp-content/uploads/2023/08/Sponsor-Smithsonian.jpg" alt="Smithsonian" width="250"/></a>
+      </div>
+      </td>
+		  </tr>
+		  <tr>
+			<th>Why the Maya Abandoned Their Cities</th>
+			<th>The Maya, an introduction</th>
+      <th>Did the ancient Maya fall because of a drought, or something else?</th>
+		  </tr>
+		  <tr>
+	<td>
+      <div class="resource-container4">  
+      <div class="circle"><img src="https://assets.editorial.aetnd.com/uploads/2016/10/istock-482420940-2.jpg?width=1920&height=960&crop=1920%3A960%2Csmart&quality=75&auto=webp" alt="The collapse of Classic Maya civilization"/></div>
+      <a href="https://www.history.com/news/why-did-the-maya-abandon-their-cities" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/history-channel-1.svg" alt="history-channel" width="250"/></a>
+      </div>
+      </td>
+			<td>
+			<div class="resource-container5">   
+      <div class="circle"><img src="https://cdn.kastatic.org/ka-perseus-images/4cf606b316dd1687957d8c65b50ff09af0a477be.jpg" alt="The collapse of Classic Maya civilization"/></div>
+      <a href="https://www.khanacademy.org/humanities/art-americas/early-cultures/maya/a/the-maya-an-introduction" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUcQMsC_ZDnTaGNFo7qWR7s4zCBoI19q6Vhq1WLVh5xrB5sA77tCRdycXUcDXIrgdn3bk&usqp=CAU" alt="khanacademy" width="250"/></a>
+      </div>
+			</td>
+      <td>
+       <div class="resource-container6">   
+      <div class="circle"><img src="https://www.brandeis.edu/now/2021/november/images/piedrasnegrascolorinside.jpg" alt="The collapse of Classic Maya civilization"/></div>
+      <a href="https://www.brandeis.edu/now/2021/november/maya-research-golden.html" target="_blank"><img src="https://leapassets.s3.ap-south-1.amazonaws.com/seal_96bacc8023.jpg" alt="brandeis university logo"  width="250"></a>
+      </div>
+      </td>
+		  </tr>
+		</table>
+		</sl-tab-panel>  
+		</sl-tab-group>		
+	</section>
 
 	<section class="photo-gallery">
 		<h1>Photo Gallery</h1>
@@ -43,24 +304,171 @@
 		  </div>
 	</section>
 
-	<section class="video-gallery"><h1>Video Gallery</h1></section>
+	
+	<section class="video-gallery">
+		<h1>Video Gallery</h1>
+		<sl-tab-group activation="manual">
+		  <sl-tab slot="nav" panel="pyramids">Building of the Great Pyramid of Giza</sl-tab>
+		  <sl-tab slot="nav" panel="indusvalley">Disappearance of the Indus Valley Civilization</sl-tab>
+		  <sl-tab slot="nav" panel="stonehenge">Construction of Stonehenge</sl-tab>
+		  <sl-tab slot="nav" panel="mayans">Collapse of the Mayan Civilization</sl-tab>
+		
+		  <sl-tab-panel name="pyramids"><table>
+		  <tr>
+			<th>Building The Great Pyramid of Giza | Lost Treasures Of Egypt | National Geographic UK</th>
+			<th>Egyptology - Pyramid Construction</th>
+		  </tr>
+		  <tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/dWq0iC4YqbE?si=99k1GPFNOH5zIf8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/pOznETH5nGY?si=HaUcXwV2cOGZlxJ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		  </tr>
+		  <tr>
+			<th>Great Pyramid of Giza</th>
+			<th>How did they build the Great Pyramid of Giza? - Soraya Field Fiorio</th>
+		  </tr>
+		  <tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/GtJW-8ZvNE8?si=sBa1Ob_b4J9_MzLq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/fJBlEPOj4Fk?si=bvobDyr0XkkWuFAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		  </tr>
+		</table>
+		</sl-tab-panel>
+		  <sl-tab-panel name="indusvalley"><table>
+		  <tr>
+			<th>Where did the Harappan civilisation go? | BBC News India</th>
+			<th>The MYSTERIOUS Disappearance Of The Indus Valley Civilization</th>
+		  </tr>
+		  <tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/dk1trNO_Hx4?si=jYpCP_nTzpUoQKEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/hIsrV6lHjgk?si=TqOCPKJNYM7Slg82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		  </tr>
+		  <tr>
+			<th>Why did an entire civilisation vanish in Pakistan? – BBC REEL</th>
+			<th>Mysterious Disappearance of the Indus Valley Civilization</th>
+		  </tr>
+		  <tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/RPdp9vFxfOA?si=jy65AU0y1BxtUd5L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/Tkvyb8o_-io?si=tkBFsQmRdTUT3MgG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		  </tr>
+		</table>
+		</sl-tab-panel>
+		  <sl-tab-panel name="stonehenge"><table>
+		  <tr>
+			<th>Is This the Secret of Stonehenge's Construction?</th>
+			<th>Ancient Aliens: Mysterious History of Stonehenge (Season 14) | History</th>
+		  </tr>
+		  <tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/9yY7CVFTE1A?si=K4SvCgBzqe2FTOn5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/eCA9ldgIIcY?si=0XS3OVG4RZ5pRvjC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		  </tr>
+		  <tr>
+			<th>Decoding Stonehenge with Neil deGrasse Tyson</th>
+			<th>Secrets of Stonehenge | National Geographic</th>
+		  </tr>
+		  <tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/8vSCeTrUn54?si=bMCl8H9CvWvOl1fh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/-6oxmxPKoSE?si=SwftnLTxOQixEZ4O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		  </tr>
+		</table>
+		</sl-tab-panel>
+		  <sl-tab-panel name="mayans"><table>
+		  <tr>
+			<th>Ancient Maya 101 | National Geographic</th>
+			<th>Ancient Aliens: The Great Mayan Disappearance (Season 9) | History</th>
+		  </tr>
+		  <tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/Q6eBJjdca14?si=6w1FN7HAiD2lgus-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/I_0YqdL_TPs?si=glbk_9GpOqc6M3fp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		  </tr>
+		  <tr>
+			<th>Ancient Maya Civilisation Destroyed by Massive Drought | Ancient Architects</th>
+			<th>New Evidence Explains Why Maya Civilization Collapsed | Expedition Unknown</th>
+		  </tr>
+		  <tr>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/7H16wye0pWg?si=d1Y9-PSppT9Iw1aH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/T6nVwpT79Hk?si=hzcpsxxLW8bT6H7K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+		  </tr>
+		</table>
+		</sl-tab-panel>  
+		</sl-tab-group>		
+	</section>
 
+	
 	<section class="quiz">
-    <div class="quiz-container">
-    <h1>Quiz</h1>
-    <div id="quiz1"></div>
-  </div>
-  </section>
+		<h1>Quiz</h1>
+		<div class="quiz-container">
+			<div class="progress-container">
+				<div class="progress-bar" id="progress-bar"></div>
+			</div>
+			<div id="quiz1"></div>
+		</div>
+	</section>
+	
 
-	<section class="contact"><h1>Contact</h1></section>
+	<section class="contact">
+		<div class="w3-content w3-section left-col">
+			<img class="mySlides w3-animate-fading" src="https://cdn.britannica.com/42/94542-120-5736FDEF/Pyramids-Cairo-Giza-plateau.jpg" alt="Pyramids-Cairo-Giza" style="width:100%; height: 100%;">
+			<img class="mySlides w3-animate-fading" src="https://static.nationalgeographic.co.uk/files/styles/image_3200/public/gettyimages-947583910.webp?w=1600&h=900" alt="IndusValleyCivilization" style="width:100%; height: 100%;">
+			<img class="mySlides w3-animate-fading" src="https://th-thumbnailer.cdn-si-edu.com/mxpJNvMq2rFbrBLyLAmDzwxrNqs=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/stonehenge_631.jpg" alt="stonehenge" style="width:100%; height: 100%;">
+			<img class="mySlides w3-animate-fading" src="https://i.natgeofe.com/n/54efa2aa-6b84-41f2-a067-292c94ed9aa2/maya7_4x3.jpg" alt="mayan-civilization" style="width:100%; height: 100%;">
+		  </div>
+		  
+		   <div class="right-col">
+			  <h1>Contact us</h1>
+			  <form id="contact-form" method="post">
+				<label for="name">Full name</label>
+			<input type="text" id="name" name="name" placeholder="Your Full Name" required>
+				<label for="email">Email Address</label>
+			<input type="email" id="email" name="email" placeholder="Your Email Address" required>
+				<label for="message">Message</label>
+			<textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+		   <button type="submit" id="submit" name="submit">Send</button><!--</a>-->
+			
+		  </form>
+		  <div id="error"></div>
+		  <div id="success-msg"></div>
+			</div>
+		  
+	</section>
 </div>
 
-<div style="display: hidden;">
+<div style="display: none;">
 	<section class="scroll-container Mysteries">
-		<section class="scroll-item"><img src="media/TheRoanokeColonyDisappearance.png" alt="TheRoanokeColonyDisappearance"><p class="timeline">1590</p><h1>The Roanoke Colony Disappearance</h1></section>
-		<section class="scroll-item"><img src="media/TheLostColonyofGreenland.png" alt="TheLostColonyofGreenland"><p class="timeline">1400s</p><h1>The Lost Colony of Greenland</h1></section>
-		<section class="scroll-item"><img src="media/The_Voynich_Manuscript_Discovery.png" alt="The_Voynich_Manuscript_Discovery"><p class="timeline">1400–1500s</p><h1>The Voynich Manuscript Discovery</h1></section>
-		<section class="scroll-item"><img src="media/TheTamamShudCase.png" alt="TheTamamShudCase"><p class="timeline">1948</p><h1>The Tamam Shud Case</h1></section>
+		<section class="scroll-item">
+			<img src="media/TheRoanokeColonyDisappearance.png" alt="TheRoanokeColonyDisappearance">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+				<p class="timeline">1590</p>
+				<h1>The Roanoke Colony Disappearance</h1>
+			</div>
+			</section>
+		<section class="scroll-item">
+			<img src="media/TheLostColonyofGreenland.png" alt="TheLostColonyofGreenland">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+				<p class="timeline">1400s</p>
+				<h1>The Lost Colony of Greenland</h1>
+			</div>
+			</section>
+		<section class="scroll-item">
+			<img src="media/The_Voynich_Manuscript_Discovery.png" alt="The_Voynich_Manuscript_Discovery">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+				<p class="timeline">1400–1500s</p>
+				<h1>The Voynich Manuscript Discovery</h1>
+			</div>
+			</section>
+		<section class="scroll-item">
+			<img src="media/TheTamamShudCase.png" alt="TheTamamShudCase">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+				<p class="timeline">1948</p>
+				<h1>The Tamam Shud Case</h1>
+			</div>
+			</section>
 	</section>
   <section class="resources"><h1>Resources</h1></section>
 
@@ -90,12 +498,44 @@
 	<section class="contact"><h1>Contact</h1></section>
 </div>
 
-<div style="display: hidden;">
+<div style="display: none;">
 	<section class="scroll-container Riddles">
-		<section class="scroll-item"><img src="media/The_Antikythera_Mechanism.png" alt="The_Antikythera_Mechanism"><p class="timeline">100BCE</p><h1>The Antikythera Mechanism</h1></section>
-		<section class="scroll-item"><img src="media/Shroud_of_Turin.png" alt="Shroud_of_Turin"><p class="timeline">14th century</p><h1>The Shroud of Turin's Origins</h1></section>
-		<section class="scroll-item"><img src="media/The_Dancing_Plague_1.png" alt="The_Dancing_Plague"><p class="timeline">1518</p><h1>The Dancing Plague of 1518</h1></section>
-		<section class="scroll-item"><img src="media/The_Tunguska_Event.png" alt="The_Tunguska_Event"><p class="timeline">1908</p><h1>The Tunguska Event</h1></section>
+		<section class="scroll-item">
+			<img src="media/The_Antikythera_Mechanism.png" alt="The_Antikythera_Mechanism">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+				<p class="timeline">100BCE</p>
+				<h1>The Antikythera Mechanism</h1>
+			</div>
+		</section>
+		<section class="scroll-item">
+			<img src="media/Shroud_of_Turin.png" alt="Shroud_of_Turin">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+				<p class="timeline">14th century</p>
+				<h1>The Shroud of Turin's Origins</h1>
+			</div>
+		</section>
+		<section class="scroll-item">
+			<img src="media/The_Dancing_Plague_1.png" alt="The_Dancing_Plague">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+				<p class="timeline">1518</p>
+				<h1>The Dancing Plague of 1518</h1>
+			</div>
+		</section>
+		<section class="scroll-item">
+			<img src="media/The_Tunguska_Event.png" alt="The_Tunguska_Event">
+			<div class="circle"></div>
+			<div class="black-line"></div>
+			<div class="text-container">
+				<p class="timeline">1908</p>
+				<h1>The Tunguska Event</h1>
+			</div>
+		</section>
 	</section>
   <section class="resources"><h1>Resources</h1></section>
 
@@ -132,7 +572,8 @@
 	<!-- JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
-  <script src="main.js"></script>
+    <script src="main.js"></script>
+	<script src="https://unpkg.com/@shoelace-style/shoelace@2.0.0-beta.104/dist/shoelace.js"></script>
 </body>
 
 </html>

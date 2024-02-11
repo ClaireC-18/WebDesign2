@@ -7,10 +7,14 @@
     main {overflow: hidden;}
     h1 {font-size: 300%;
         font-family: 'Marcellus SC', serif;
+        color: #C0A760;
+        text-align: center;
+        padding: 15px;
     }
+   
     section {
         width: 100%;
-        height: 100vh;
+        height: 103vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,6 +24,7 @@
     .scroll-container {
         width: 500%;
         display: flex;
+        background: linear-gradient(rgb(31, 47, 47) 5%, rgb(225, 177, 111) 50%, rgb(31, 47, 47) 95%);
     }
 
     .scroll-panel {
@@ -89,17 +94,65 @@
         font-weight: 600;
       }
 
+      .progress-container {
+        width: 90%;
+        background-color: #ddd;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+    
+    .progress-bar {
+        height: 10px;
+        background-color: #1F2F2F;
+        border-radius: 10px;
+        width: 0;
+        transition: width 0.5s ease;
+    }
+
+      .black-line {
+        border-top: 4px solid black;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+    }
+      .circle {
+        position: absolute;
+        background: black;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin: 0px;
+        left: 5%;
+    }
+
+    .text-container {
+        position: absolute;
+        bottom: 37%;
+        left: 21%;
+        transform: translateX(-50%);
+        text-align: left;
+        text-wrap: wrap;
+        width: 40em;
+    }
+
       .scroll-item {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+
+        h2{
+            font-size: 50px;
+        }
     }
 
     .scroll-item img {
         width: 100%; /* Ensure the image takes the full width of its container */
         max-width: 650px; /* Adjust the maximum width of the image as needed */
         margin-bottom: 10px; /* Add some space between the image and the following elements */
+        z-index: 1;/* Brings image to front of timeline */
     }
 
     .timeline {
@@ -158,3 +211,215 @@
       .photo-gallery{
         flex-direction: column;
       }
+
+      sl-tab-group {
+        width: 90%;
+      }
+      
+      sl-tab-panel {
+        height: 800px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: rgba(249,220,180,0.2);
+      }
+      
+      sl-tab {
+        background-color: #E1B16F;
+        font-variant: small-caps;
+        font-weight: bold;
+        height: 48px;
+        border-radius: 10px 10px 0px 0px;
+      }
+      
+      sl-tab[active] {
+       background-color: #792E19;
+      }
+      
+      sl-tab[active]::part(base) {
+       color: white;
+      }
+      
+      table{
+        width:100%;
+      }
+      
+      tr, td{
+        width:50%;
+        text-align: center;
+        color: #E1B16F;
+        padding: 10px;
+        font-size: 20px;
+      }
+      
+      .quiz, .video-gallery, .resources{
+        flex-direction: column;
+      }
+
+      .resources{
+
+        sl-tab-panel {
+          height: 880px;
+    }
+        
+        tr, td{
+          width:33%;
+          height: 100px;
+          padding: 35px;
+        }
+  
+  .resource-container .circle,
+  .resource-container2 .circle,
+  .resource-container3 .circle, 
+  .resource-container4 .circle,
+  .resource-container5 .circle,
+  .resource-container6 .circle {
+      position: absolute;
+      background: #E1B16F;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      margin: 1px;
+      left: 247px;
+      top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    
+    img{
+        width: 90px;
+        height: 90px;
+    border-radius: 50%;
+  }
+  }
+  
+    .resource-container2 .circle,
+     .resource-container5 .circle{ 
+    left: 806px !important;
+    }
+    
+    .resource-container3 .circle,
+    .resource-container6 .circle{
+      left: 1365px !important;
+    }
+  
+  .resource-container4 .circle,
+  .resource-container5 .circle,
+  .resource-container6 .circle{
+    top: 532px !important;
+  }
+  }
+
+.contact{
+    .w3-animate-fading{
+        animation:fading 10s infinite
+        }
+
+        @keyframes fading{
+        0%{opacity:0}
+        50%{opacity:1}
+        100%{opacity:0}
+        }
+        
+        .contact-container {
+          display: flex;
+          width: 90vw;
+          height: 100vh;
+          background: #FCFDFD;
+        }
+        .right-col {
+          background: #a7ababc2;
+          width: 45vw;
+          height: 100vh;
+          padding: 5rem 3.5rem;
+        }
+        .left-col {
+          width: 45vw;
+          height: 100vh;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        label, button {
+            font-family: 'Darker Grotesque', sans-serif;
+          font-weight: 400;
+          letter-spacing: 0.1rem;
+        }
+        
+        label{
+          color: #1a1a1a;
+          text-transform: uppercase;
+          font-size: 20px;
+          text-align: left;
+          font-weight: 500;
+        }
+        
+        form {
+          width: 31.25rem;
+          position: relative;
+          margin-top: 2rem;
+          padding: 1rem 0;
+        }
+        
+        input, textarea, label {
+          width: 40vw;
+          display: block;
+        }
+        
+        p, placeholder, input, textarea {
+            font-family: 'Darker Grotesque', sans-serif;
+        }
+        
+        input::placeholder, textarea::placeholder {
+          color: #010712;
+        }
+        
+        input, textarea {
+          color: #010712;
+          font-weight: 500;
+          background: #FCFDFD;
+          border: none;
+          border-bottom: 1px solid #818386;
+          padding: 0.5rem 0;
+          margin-bottom: 1rem;
+          outline: none;
+          font-size: 17px;
+        }
+        
+        textarea {
+          resize: none;
+        }
+        
+        button {
+          text-transform: uppercase;
+          font-weight: 300;
+          background: #3B3636;
+          color: #FCFDFD;
+          width: 10rem;
+          height: 2.25rem;
+          border: none;
+          border-radius: 2px;
+          outline: none;
+          cursor: pointer;
+        }
+        
+        input:hover, textarea:hover, button:hover {
+          opacity: 0.5;
+        }
+        
+        button:active {
+          opacity: 0.8;
+        }
+        
+        #error, #success-msg {
+          width: 40vw;
+          margin: 0.125rem 0;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          font-family: 'Darker Grotesque', sans-serif;
+          color: #818386;
+          }
+        
+          #success-msg {
+          transition-delay: 3s;
+          }
+        
+}
