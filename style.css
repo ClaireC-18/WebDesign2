@@ -42,7 +42,7 @@ section {
   height: 100vh;
 }
 */
-/* Styling for the images *//*
+/* Styling for the images */ /*
 .image {
   width: 800px;
   height: auto;
@@ -289,10 +289,10 @@ h1,
     .splide {
         padding: 20px 0;
     }
-    
-    img{
-      width:200px;
-      height: 70vh;
+
+    img {
+        width: 200px;
+        height: 70vh;
     }
 
     /* Generic Slide*/
@@ -612,4 +612,13 @@ td {
     #success-msg {
         transition-delay: 3s;
     }
+}
+
+/*FOOTER STYLING*/
+footer {
+  background-color: #e1b16f;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }

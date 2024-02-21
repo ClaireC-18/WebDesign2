@@ -1,8 +1,8 @@
 //“Samesite-examples/javascript.md at Master · GoogleChromeLabs/Samesite-examples.” n.d. GitHub. https://github.com/GoogleChromeLabs/samesite-examples/blob/master/javascript.md.
 // Set a same-site cookie for first-party contexts
-document.cookie = 'cookie1=value1; SameSite=Lax';
+document.cookie = "cookie1=value1; SameSite=Lax";
 // Set a cross-site cookie for third-party contexts
-document.cookie = 'cookie2=value2; SameSite=None; Secure';
+document.cookie = "cookie2=value2; SameSite=None; Secure";
 //LOADER KEPT BREAKING THE SITE SO LEFT IT OUT
 // Simulate loading
 /*window.addEventListener('load', function() {
@@ -66,7 +66,6 @@ function setupScrollTrigger(e) {
 gsap.registerPlugin(ScrollTrigger);
 const containers = document.querySelectorAll(".scroll-container");
 containers.forEach((e) => setupScrollTrigger(e));
-
 
 //FUNCTION TO CREATE, RUN, AND CALCULATE SCORES FOR EACH SECTION OF THE QUIZ SECTIONS
 //“Progress Bar,” n.d. https://shoelace.style/components/progress-bar.
@@ -182,9 +181,8 @@ let quiz1 = new Quiz("quiz1", quizzes.container1.questions),
 quiz1.displayQuestion(),
     quiz2.displayQuestion(),
     quiz3.displayQuestion(),
-
     //SPLIDE CAROUSEL FUNCTION FOR PHOTO GALLERY
-	//“SplideJS Carousel Demo.” n.d. CodePen. https://codepen.io/brandonleetran/pen/bGEKrEE.
+    //“SplideJS Carousel Demo.” n.d. CodePen. https://codepen.io/brandonleetran/pen/bGEKrEE.
     // Initialize the Splide carousel for each container
     document.addEventListener("DOMContentLoaded", function () {
         new Splide("#splide1", { type: "loop", perPage: 1, focus: "center", flickMaxPages: 2, updateOnMove: !0, pagination: !1, padding: "10%", throttle: 300, breakpoints: { 1440: { perPage: 1, padding: "30%" } } }).mount(),
