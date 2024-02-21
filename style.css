@@ -181,7 +181,7 @@ h1,
         display: flex;
         flex-direction: column;
         /*Pngtree. n.d. Vector Egyptian Hieroglyphs PNG and PSD. Pngtree. https://pngtree.com/freepng/vector-egyptian-hieroglyphs_766530.html.*/
-        background: linear-gradient(rgba(31, 47, 47, 0.9), rgba(31, 47, 47, 0.9)), url("media/egyptian-hieroglyphs.webp");
+        background: linear-gradient(rgba(31, 47, 47, 0.9), rgba(31, 47, 47, 0.9)), url("images/egyptian-hieroglyphs.webp");
         text-align: start;
     }
 }
@@ -190,7 +190,7 @@ h1,
         display: flex;
         flex-direction: column;
         /*“pixel-digits-matrix-abstract-technology-600nw-2152272691.jpg (600×306).” n.d. https://www.shutterstock.com/image-vector/pixel-digits-matrix-abstract-technology-600nw-2152272691.jpg.*/
-        background: linear-gradient(rgba(31, 47, 47, 0.7), rgba(31, 47, 47, 0.7)), url("media/cypher-background.webp");
+        background: linear-gradient(rgba(31, 47, 47, 0.7), rgba(31, 47, 47, 0.7)), url("images/cypher-background.webp");
         text-align: start;
     }
 }
@@ -200,7 +200,7 @@ h1,
         display: flex;
         flex-direction: column;
         /*“https://i.redd.it/farit-artonc-intercepted-engineering-schematics-v0-2050nvl145db1.jpg?width=1011&format=pjpg&auto=webp&s=f3339bf795cd0cb85393b5d5dd60a66e98c03b87.” n.d. Reddit. https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Ffarit-artonc-intercepted-engineering-schematics-v0-2050nvl145db1.jpg%3Fwidth%3D1011%26format%3Dpjpg%26auto%3Dwebp%26s%3Df3339bf795cd0cb85393b5d5dd60a66e98c03b87.*/
-        background: linear-gradient(rgba(31, 47, 47, 0.8), rgba(31, 47, 47, 0.8)), url("media/intercepted-engineering-schematics.webp");
+        background: linear-gradient(rgba(31, 47, 47, 0.8), rgba(31, 47, 47, 0.8)), url("images/intercepted-engineering-schematics.webp");
         text-align: start;
     }
 }
