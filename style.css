@@ -13,6 +13,7 @@ body {
     background-color: #1f2f2f;
     font-family: "Darker Grotesque", sans-serif;
     margin: 0;
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
 }
 
 html {
@@ -612,7 +613,15 @@ td {
     #success-msg {
         transition-delay: 3s;
     }
+
+    sl-button{
+        background-color: #e1b16f;
+        border-radius: 50%;
+        border: none;
+        --size: 6rem;
+    }
 }
+
 
 /*FOOTER STYLING*/
 footer {
@@ -621,4 +630,159 @@ footer {
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.1em;
+}
+
+/* Media query for screens 1000px wide and below */
+@media screen and (max-width: 1000px) {
+    /* Add your styles for screens 1024px wide and above here */
+    body {
+      font-size: 18px; /* Example change for larger screens */
+    }
+    .scroll-item img {
+        max-width: 400px;
+    }
+
+    #splide1-track,
+    #splide2-track,
+    #splide3-track{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    }
+
+    iframe{
+        width: 80%;
+    }
+    th{
+        font-size: 17px;
+    }
+
+    sl-tab-group {
+        width: 94%;
+    }
+    sl-tab-panel {
+        height: 80vh;
+    }
+
+    .quiz-container {
+        width: 90vh;
+    }
+
+    .scroll-container{
+        padding-left: 150px !important;
+    }
+
+    .circle {
+        left: -9%;
+    } 
+    .black-line {
+        left: -7%;
+    }
+
+    .text-container {
+        bottom: 36%;
+        left: 22%;
+    }
+
+    .timeline {
+        font-size: 23px;
+    }
+    .scroll-item h2 {
+        font-size: 33px;
+    }
+
+    .facts {
+        width: 530px;
+    }
+
+    .resources{ img{
+        width: 150px;
+    }
+    
+sl-tab-panel {
+    height: 70vh;
+}
+    }
+ }
+
+ /* Media query for screens 768px wide and below */
+@media screen and (max-width: 768px) {
+
+    h1, #sub-heading {
+        width: 80vw;
+    }
+
+    #animation-container p{
+        font-size: 20px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    #text-content {
+        font-size: 15px;
+    }
+
+    .scroll-item img {
+        max-width: 350px;
+    }
+
+    .scroll-container{
+        padding-left: 110px !important;
+    }
+
+    .circle {
+        left: -9%;
+    } 
+    .black-line {
+        left: -7%;
+    }
+
+    .text-container {
+        bottom: 36%;
+        left: 28%;
+    }
+
+    .timeline {
+        font-size: 21px;
+    }
+    .scroll-item h2 {
+        font-size: 30px;
+        width: 12em;
+    }
+    .facts {
+        width: 388px;
+    }
+
+    .resources{ img{
+        width: 150px;
+    }
+    
+sl-tab-panel {
+    height: 70vh;
+}
+    }
+
+    #splide1-track,
+    #splide2-track,
+    #splide3-track{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    }
+
+    iframe{
+        width: 80%;
+        height: 200;
+    }
+    sl-tab-panel {
+        height: 85vh;
+    }
+
+    .quiz-container {
+        width: 80vh;
+    }
+
+    button{
+        float: left;
+    }
 }

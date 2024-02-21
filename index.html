@@ -2170,13 +2170,12 @@
                         <h1>Contact us</h1>
                         <form id="contact-form">
                             <label for="name">Full name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+                            <sl-tooltip content="Name must be at least 3 characters long"><input type="text" id="name" name="name" placeholder="Your Full Name" required /></sl-tooltip>
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Your Email Address" required />
+                            <sl-tooltip content="Email must be formatted eg example@outlook.com" style="--max-width:400px"><input type="email" id="email" name="email" placeholder="Your Email Address" required /></sl-tooltip>
                             <label for="message">Message</label>
-                            <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+                            <sl-tooltip content="Message must be at least 15 characters long"><textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea></sl-tooltip>
                             <button type="submit" id="submit" name="submit">Send</button>
-                            <!--</a>-->
                         </form>
                         <div id="error"></div>
                         <div id="success-msg"></div>
